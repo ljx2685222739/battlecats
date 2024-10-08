@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「わんこ大戦争」オンライン版 - 戦略的タワーディフェンスゲームで犬の軍団を指揮しよう！</title>
+    <meta name="description" content="「わんこ大戦争」は、犬のキャラクターを率いて敵を撃破する人気のタワーディフェンスゲームです。ゲームの操作方法や進行、攻略法、編成コードの共有まで詳しく解説。初心者でも楽しめるわんこ大戦争のオンラインバージョンを今すぐプレイ！">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://wanko-daisensou.com/" />
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="bg-gradient-to-r from-yellow-100 via-orange-100 to-red-100 text-gray-800 min-h-screen flex flex-col">
+    <header class="bg-white bg-opacity-80 shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.webp" alt="わんこ 大 戦争 ロゴ" class="h-12 w-auto mr-2">
+                <h1 class="text-3xl font-bold text-orange-600">わんこ 大 戦争</h1>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="/index.html" class="text-gray-600 hover:text-orange-500 transition duration-300">ホーム</a></li>
+                <li><a href="/blogs" class="text-gray-600 hover:text-orange-500 transition duration-300">ブログ</a></li>
+                <li><a href="/privacy-policy.html" class="text-gray-600 hover:text-orange-500 transition duration-300">プライバシーポリシー</a></li>
+                <li><a href="/terms-of-service.html" class="text-gray-600 hover:text-orange-500 transition duration-300">利用規約</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="relative w-full max-w-4xl mx-auto mb-12">
+            <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 via-orange-200 to-red-200 rounded-lg blur-md"></div>
+            <div class="relative">
+                <iframe 
+                    id="gameFrame"
+                    src="https://example.com/game" 
+                    class="w-full aspect-video rounded-lg shadow-lg"
+                    allowfullscreen
+                ></iframe>
+                <div class="mt-2 flex justify-end">
+                    <button id="fullscreenBtn" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                        全画面表示
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">わんこ大戦争ゲーム紹介</h2>
+                <p class="mb-4">「わんこ大戦争」は、戦略性とカジュアルさを兼ね備えたタワーディフェンスゲームです。プレイヤーはわんこの軍団を編成し、敵のにゃんこ軍団の城を攻撃して、自分の城を守ることが目標です。わんこ大戦争の最大の特徴は、多様なキャラクターたちを組み合わせて戦略的に戦うことが求められる点です。</p>
+                <img src="homepage1.jpg" alt="わんこ大戦争ゲームスクリーンショット" class="w-full h-auto rounded-lg shadow-md mb-4">
+            </div>
+    
+            <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">ゲームの歴史</h2>
+                <p class="mb-4">「わんこ大戦争」は、「にゃんこ大戦争」から派生したファンメイドのゲームとして人気を集めています。もともとは猫をテーマにした「にゃんこ大戦争」が人気を博していましたが、犬をテーマにしたわんこ大戦争が登場し、多くのファンが熱狂しています。長年にわたってアップデートが繰り返され、新しいステージやキャラクターが追加され続けており、プレイヤーに常に新しい挑戦が提供されています。</p>
+            </div>
+    
+            <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-md col-span-full">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">わんこ大戦争の操作方法</h2>
+                <p class="mb-4">わんこ大戦争の操作は非常にシンプルで、初心者でもすぐに始められます。バトルに出撃させるキャラクターを選び、数字キー（1～6）を押してゲームを開始します。編成したキャラクターを使用し、敵の城を破壊するのが最終目標です。画面右上にはお金が表示されており、プレイヤーはお金を消費して新しいキャラクターを生産します。</p>
+                <p class="mb-4">画面の左右矢印キーで背景を変更したり、上下矢印キーでBGMを変更することも可能です。さらに、わんこ大戦争では編成コードを使ってチームを保存・共有することができ、他のプレイヤーと戦略を共有する楽しみもあります。</p>
+            </div>
+    
+            <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">ステージ紹介と進行方法</h2>
+                <p class="mb-4">現在、わんこ大戦争には6つのステージが用意されています。それぞれのステージには異なる特徴があり、進行するごとに難易度が上がります。</p>
+                <ol class="list-decimal list-inside mb-4">
+                    <li>ステージ1 - にゃんこ軍団</li>
+                    <li>ステージ2 - 最強の消しゴム</li>
+                    <li>ステージ3 - 赤いやつらの戦い【赤色限定】</li>
+                    <li>ステージ4 - 進撃の巨人</li>
+                    <li>ステージ5 - サイクロンズ【サイクロン限定】</li>
+                    <li>ステージ6 - 神速の強者【NEW】</li>
+                </ol>
+            </div>
+    
+            <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">わんこ大戦争の攻略と進階テクニック</h2>
+                <p class="mb-4">わんこ大戦争では、キャラクターの特性をうまく活用することが攻略のカギとなります。壁役となるわんこやにょろ、ゴマさまなどのキャラクターを使って敵の攻撃を防ぎつつ、高い攻撃力を持つキャラクターを後方から投入するのが効果的です。特に「真レジェンドブンブン」は古代の呪いで敵の特殊能力を封じる強力なキャラで、進行に大きく貢献します。</p>
+                <p class="mb-4">進撃の巨人やブラックサイクロンといった高速キャラクターは、20%の確率で敵を後退させる能力を持ち、攻撃のタイミングを調整することが重要です。高い耐久力を持つキャラクターで敵の攻撃を耐えつつ、攻撃力が高いキャラクターで敵を確実に倒していきます。</p>
+                <p class="mb-4">また、編成コードを使って効果的なチームを組み、他のプレイヤーと攻略法を共有することで、より効率的にゲームを進めることが可能です。ステージごとの攻略ポイントや敵の弱点を把握して、最適なチームを編成しましょう。</p>
+                <img src="homepage2.jpg" alt="わんこ大戦争キャラクターラインナップ" class="w-full h-auto rounded-lg shadow-md mt-4">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const gameFrame = document.getElementById('gameFrame');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+        fullscreenBtn.addEventListener('click', () => {
+            if (gameFrame.requestFullscreen) {
+                gameFrame.requestFullscreen();
+            } else if (gameFrame.mozRequestFullScreen) { // Firefox
+                gameFrame.mozRequestFullScreen();
+            } else if (gameFrame.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                gameFrame.webkitRequestFullscreen();
+            } else if (gameFrame.msRequestFullscreen) { // IE/Edge
+                gameFrame.msRequestFullscreen();
+            }
+        });
+    </script>
+
+    <footer class="bg-orange-200 py-4">
+        <div class="container mx-auto text-center text-gray-600">
+            &copy; 2024 わんこ 大 戦争. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScriptコードをここに追加
+    </script>
+</body>
+</html>
